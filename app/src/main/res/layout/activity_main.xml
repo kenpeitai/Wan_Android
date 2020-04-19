@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="percent"
+
+        />
+
+
+    <ImageButton
+        android:src="@drawable/home"
+        android:background="#FFFFFF"
+        android:id="@+id/btn_01"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pager_view"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <ImageButton
+        android:src="@drawable/hot"
+        android:background="#FFFFFF"
+        android:id="@+id/btn_02"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintLeft_toRightOf="@id/btn_01"
+        app:layout_constraintTop_toBottomOf="@id/pager_view"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <ImageButton
+        android:src="@drawable/news"
+        android:background="#FFFFFF"
+        android:id="@+id/btn_03"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintLeft_toRightOf="@id/btn_02"
+        app:layout_constraintTop_toBottomOf="@id/pager_view"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <ImageButton
+        android:src="@drawable/user"
+        android:background="#FFFFFF"
+        android:id="@+id/btn_04"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintLeft_toRightOf="@id/btn_03"
+        app:layout_constraintTop_toBottomOf="@id/pager_view"
+        app:layout_constraintWidth_percent="0.25" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
